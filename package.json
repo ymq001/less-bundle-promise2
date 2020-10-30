@@ -1,0 +1,43 @@
+{
+  "name": "less-bundle-single",
+  "version": "1.0.1",
+  "description": "A package bundler for Less",
+  "author": {
+    "name": "ymq",
+    "url": "https://github.com/ymq001/less-bundle-promise2"
+  },
+  "keywords": [
+    "less",
+    "less-bundle",
+    "less-bundle-promise",
+    "bunlde-less"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ymq001/less-bundle-promise2/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymq001/less-bundle-promise2"
+  },
+  "main": "build/index.js",
+  "homepage": "https://github.com/ymq001/less-bundle-promise2",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.1"
+  },
+  "bugs": {
+    "url": "https://github.com/ymq001/less-bundle-promise/issues"
+  },
+  "scripts": {
+    "build": "tsc --lib es2015,dom --outDir build src/index.ts",
+    "predeploy": "cp package.json build/package.json && cp README.md build/README.md",
+    "deploy": "npm publish"
+  }
+}
