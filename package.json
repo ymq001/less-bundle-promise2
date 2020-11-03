@@ -1,6 +1,6 @@
 {
   "name": "less-bundle-single",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "description": "A package bundler for Less",
   "author": {
     "name": "ymq",
@@ -10,7 +10,7 @@
     "less",
     "less-bundle",
     "less-bundle-promise",
-    "bunlde-less"
+    "bundle-less"
   ],
   "licenses": [
     {
@@ -36,8 +36,8 @@
     "url": "https://github.com/ymq001/less-bundle-promise/issues"
   },
   "scripts": {
-    "build": "tsc --lib es2015,dom --outDir build src/index.ts",
-    "predeploy": "cp package.json build/package.json && cp README.md build/README.md",
-    "deploy": "npm publish"
+    "build": "tsc --lib es2015,dom --outDir build src/index.ts -d",
+    "preDeploy": "cp package.json build/package.json && cp README.md build/README.md",
+    "deploy": "npm run build && npm run preDeploy && npm publish build"
   }
 }

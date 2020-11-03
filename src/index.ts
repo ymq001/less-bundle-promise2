@@ -1,2 +1,4 @@
-﻿import compress = require('./lib/compressor');
-export = compress;
+﻿import LessBundle from './lib/LessBundle';
+
+export { LessBundle };
+export const lessBundleSingle = new LessBundle();
